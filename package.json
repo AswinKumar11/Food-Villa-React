@@ -1,0 +1,33 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "learning react",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AswinKumar11/react.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Aswin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AswinKumar11/react/issues"
+  },
+  "homepage": "https://github.com/AswinKumar11/react#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "postcss": "^8.4.21",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "formik": "^2.2.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.7.0"
+  }
+}
