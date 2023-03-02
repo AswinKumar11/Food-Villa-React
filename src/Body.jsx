@@ -25,7 +25,7 @@ export default Body = () =>{
   }
   return hotelList2.length === 0 ? <ShimmerForPage /> : (
     <>
-      <div className="bg-blue-200 m-3 p-3 shadow-xl">
+      <div className="bg-gray-300 m-3 p-3 shadow-xl">
         <input
         type="text" className="border-solid border-2 border-black rounded-lg m-1 p-1"
         placeholder="Search"
@@ -48,7 +48,7 @@ export default Body = () =>{
         Search
       </button>
       </div>
-      <div className="flex flex-wrap m-3 p-3 bg-blue-200">
+      <div className="flex flex-wrap m-3 p-3 bg-gray-200">
         {
         filteredHotelList2.length === 0 ? <ShimmerForSearch />:filteredHotelList2.map((hotelList1) => {
           return <FoodCard {...hotelList1.data} key={hotelList1.data.id} />;

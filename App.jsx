@@ -15,7 +15,7 @@ import { createBrowserRouter,Outlet,RouterProvider } from "react-router-dom";
 
 const HomePage = () => {
     const [Login,isLoginDone]=useState({LoginDetails:{
-        emailId:"Please Login to see E-mail Id",
+        emailId:"",
         logIn:false
     }});
     return (

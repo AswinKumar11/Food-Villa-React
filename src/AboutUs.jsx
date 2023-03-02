@@ -6,7 +6,7 @@ export default AboutUs = () => {
     }});
     {console.log(openAccordion);}
     return(
-        <div className="m-3 p-3 bg-blue-200">
+        <div className="m-3 p-3 bg-gray-100">
         <h1 className="font-extrabold text-center">Welcome to Food Villa</h1>
         <div>
         <div className="flex flex-wrap justify-between">

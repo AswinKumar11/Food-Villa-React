@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { IMG_CDN_URL } from '../data';
 export const FoodCard = ({name,costForTwoString,deliveryTime,cloudinaryImageId,id}) => {
     return  (
-      <div className="border-solid bg-blue-300 m-3 p-3 shadow-xl hover:shadow w-52 rounded-lg">
+      <div className="border-solid bg-gray-200 m-3 p-3 shadow-xl hover:shadow w-52 rounded-lg">
         <img
           src= {IMG_CDN_URL+cloudinaryImageId}
           alt="FoodImage" className="w-48"

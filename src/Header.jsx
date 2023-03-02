@@ -23,7 +23,7 @@ export default Header = () => {
     }
   },[])
   return (
-    <div className="flex justify-between p-3 m-3 bg-blue-200 shadow-xl rounded-lg">
+    <div className="flex justify-between p-3 m-3 bg-gray-500 shadow-xl rounded-lg">
       <a href="/">
         <img
             // src={LogoImage}
