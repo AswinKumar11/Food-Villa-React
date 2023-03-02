@@ -11,7 +11,7 @@ const MenuCard = ({value,checkcart,Quantity,setQuantity}) => {
                        getIndex = Quantity.findIndex((ee)=> ee.id == item.id);
                     }
                     return (
-                    <div className="flex  m-2 p-1 w-80 justify-between shadow-xl bg-blue-300 rounded-lg" key={item.id}>
+                    <div className="flex  m-2 p-1 w-80 justify-between shadow-xl bg-gray-200 rounded-lg" key={item.id}>
                         <div>
                             <img src={IMG_CDN_URL + item.cloudinaryImageId} alt={item.id}className="w-[11rem] h-[8rem]" />
                             <h2 className="m-1 p-1 font-bold" >{item.name}</h2>

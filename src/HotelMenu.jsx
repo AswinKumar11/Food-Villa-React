@@ -19,7 +19,7 @@ export default HotelMenu = () =>{
         return null
     } //early return
     return (hotelMenuList.length == 0)?<ShimmerForSearch />:(
-        <div className="bg-blue-200 m-3 p-3">
+        <div className="bg-gray-100 m-3 p-3">
             <h1 className="text-2xl font-extrabold text-center mx-3">{hotelMenuList?.name}</h1>
             <MenuCard value = {Object.values(hotelMenuList?.menu?.items)} Quantity = {Quantity} setQuantity={setQuantity} />
         </div>

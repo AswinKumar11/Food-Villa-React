@@ -24,12 +24,12 @@ const Basic = () => {
         onChange={formik.handleChange}
         value={formik.values.email}
       />
-      {formik.values.email.length>0?<Link to = '/'><button type="submit" className='border-solid border-2 border-black bg-blue-200 m-2 p-2 w-20' onClick={()=>{
+      {formik.values.email.length>0?<Link to = '/'><button type="submit" className='border-solid border-2 border-black bg-gray-50 m-2 p-2 w-20' onClick={()=>{
         isLoginDone({LoginDetails:{
           emailId:formik.values.email,
           logIn:true
       }})
-      }}>Submit</button></Link>:<button type="submit" className='border-solid border-2 border-black bg-blue-200 m-2 p-2 w-20' onClick={()=>{
+      }}>Submit</button></Link>:<button type="submit" className='border-solid border-2 border-black bg-gray-200 m-2 p-2 w-20' onClick={()=>{
         alert("Please Enter a valid Email");
         }}>Submit</button>}
     </form>
