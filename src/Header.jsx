@@ -26,7 +26,6 @@ export default Header = () => {
     <div className="flex justify-between p-3 m-3 bg-gray-500 shadow-xl rounded-lg">
       <a href="/">
         <img
-            // src={LogoImage}
           src="https://yt3.ggpht.com/ytc/AMLnZu_EC-ECXAxRAixWGEfMsE1rdSoetBHyxmLNdtCB=s900-c-k-c0x00ffffff-no-rj"
           alt="logo"
           className="w-24"
