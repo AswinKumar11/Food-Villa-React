@@ -5,7 +5,7 @@ export default  ErrorMessage =  () =>{
         <>
             <h1>Something Went Wrong!!!!</h1>
             <h2>status : {error?.status}</h2>
-            <h3>Error Message : {error?.error?.message}</h3>
+            <h3>Error Messages : {error?.error?.message}</h3>
         </>
     )
 }
