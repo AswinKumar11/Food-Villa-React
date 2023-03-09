@@ -1,25 +1,23 @@
-import React,{useState} from "react";
+import React,{lazy, Suspense, useState} from "react";
 import ReactDOM from "react-dom/client";
-import AboutUs from "./src/AboutUs";
 import ErrorMessage from "./src/Error";
 import Body from "./src/Body";
 import Header from "./src/Header";
-import CartPage from "./src/CartPage";
-import HotelMenu from "./src/HotelMenu";
-import Details from "./src/Details";
-import Basic from "./src/LoginPage";
 import {LoginData} from "./src/UserContext";
 import UserContext from "./src/UserContext";
 import Footer from "./src/Footer";
 import { createBrowserRouter,Outlet,RouterProvider } from "react-router-dom";
-
+const AboutUs = lazy(()=>import("./src/AboutUs"));
+const CartPage = lazy(()=>import("./src/CartPage"));
+const HotelMenu = lazy(()=>import("./src/HotelMenu"));
+const Details = lazy(()=>import("./src/Details"));
+const Basic = lazy(()=>import("./src/LoginPage"));
 const HomePage = () => {
     const [Login,isLoginDone]=useState({LoginDetails:{
         emailId:"",
         logIn:false
     }});
     return (
-      <>
       <UserContext>
         <LoginData.Provider value={
             {
@@ -28,11 +26,12 @@ const HomePage = () => {
             }
         }>
         <Header />
+         <Suspense>
         <Outlet />
+        </Suspense>
         <Footer />
         </LoginData.Provider>
         </UserContext>
-      </>
     );
   };
   const appLinkComp = createBrowserRouter([
